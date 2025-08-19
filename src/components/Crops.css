@@ -1,0 +1,129 @@
+.crops {
+  padding: 80px 0;
+  background: white;
+}
+
+.crops .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.crops h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2d8a2e;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.crops-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.crops-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.crop-card {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 2rem;
+  border-left: 5px solid #4caf50;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.crop-card h3 {
+  color: #2d8a2e;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.crop-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.crop-benefits h4 {
+  color: #2d8a2e;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.crop-benefits ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.crop-benefits li {
+  color: #666;
+  padding: 0.25rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.crop-benefits li:before {
+  content: "✓";
+  color: #4caf50;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.crop-season {
+  color: #666;
+  font-size: 0.9rem;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.crops-footer {
+  text-align: center;
+  background: #e8f5e8;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.crops-footer p {
+  color: #2d8a2e;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .crops-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .crop-card {
+    padding: 1.5rem;
+  }
+
+  .crops h2 {
+    font-size: 2rem;
+  }
+}

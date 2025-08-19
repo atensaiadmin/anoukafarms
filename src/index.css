@@ -1,0 +1,170 @@
+/* Modern CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+}
+
+/* Ensure full width for all containers */
+.App {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Remove default link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Prevent horizontal overflow only on main layout elements */
+body, html, #root, .App {
+  overflow-x: hidden;
+}
+
+/* Prevent overflow on main sections only, not all divs */
+section, header, main, footer {
+  width: 100%;
+}
+
+/* Global emoji and icon styles - prevent scrolling/selection */
+span[role="img"],
+.emoji,
+[class*="icon"],
+img,
+.hero-image,
+.crop-item,
+.crop-icon,
+.feature-icon,
+.info-icon,
+.logo-icon,
+.badge-icon {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: default;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+/* Prevent text selection on decorative elements */
+.hero-badge .badge-icon,
+.crop-icon,
+.feature-icon,
+.info-icon,
+.logo-icon {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  pointer-events: none !important;
+  -webkit-touch-callout: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  cursor: default !important;
+}
+
+/* Disable text selection on entire hero section decorative elements */
+.hero-image-placeholder *,
+.crop-showcase *,
+.hero-visual *,
+.visual-container *,
+.about-features .feature-icon,
+.contact-info .info-icon {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+/* Target all visual containers and their children */
+.hero-visual,
+.hero-visual *,
+.visual-container,
+.visual-container *,
+.crop-showcase,
+.crop-showcase *,
+.hero-image-placeholder,
+.hero-image-placeholder * {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  pointer-events: none !important;
+  cursor: default !important;
+  -webkit-touch-callout: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Force default cursor on any potentially scrollable elements */
+div:not(input):not(textarea):not(.nav-link):not(button):not([contenteditable]) {
+  cursor: default;
+}
+
+/* Specifically target elements that might show text cursor */
+.hero-visual div,
+.visual-container div,
+.crop-showcase div,
+.hero-image-placeholder div {
+  cursor: default !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
