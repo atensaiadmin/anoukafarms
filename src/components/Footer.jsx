@@ -43,7 +43,8 @@ const Footer = () => {
             <h4>Contact Info</h4>
             <div className="contact-item">
               <span>📍</span>
-              <p>Borno State, Nigeria</p>
+              <p>Anouka Farms, Bolakil Farm Area<br />
+                 Damboa Local Government, Borno State, Nigeria</p>
             </div>
             <div className="contact-item">
               <span>📧</span>

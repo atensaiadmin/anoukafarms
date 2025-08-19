@@ -37,7 +37,10 @@ const Contact = () => {
               <div className="info-icon">📍</div>
               <div>
                 <h3>Location</h3>
-                <p>Borno State, Nigeria</p>
+                <p>Anouka Farms<br />
+                   Bolakil Farm Area<br />
+                   Damboa Local Government<br />
+                   Borno State, Nigeria</p>
               </div>
             </div>
             
