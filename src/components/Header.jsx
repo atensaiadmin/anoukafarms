@@ -25,7 +25,28 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'header-scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">
-          <div className="logo-icon">🌾</div>
+          <div className="logo-icon">
+            <svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style={{stopColor:"#2d8a2e", stopOpacity:1}} />
+                  <stop offset="100%" style={{stopColor:"#4caf50", stopOpacity:1}} />
+                </linearGradient>
+              </defs>
+              <circle cx="32" cy="32" r="30" fill="url(#logoGradient)" stroke="#fff" strokeWidth="2"/>
+              <path d="M20 48 L32 20 L44 48 M26 40 L38 40" 
+                    stroke="#fff" 
+                    strokeWidth="4" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    fill="none"/>
+              <path d="M48 16 Q50 14 52 16 Q50 18 48 16 M50 14 L50 20" 
+                    stroke="#fff" 
+                    strokeWidth="1.5" 
+                    strokeLinecap="round" 
+                    fill="none"/>
+            </svg>
+          </div>
           <div className="logo-text">
             <h2>Anouka Farms</h2>
             <span className="tagline">Borno, Nigeria</span>
