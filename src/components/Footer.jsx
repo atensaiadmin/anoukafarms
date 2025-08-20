@@ -46,14 +46,14 @@ const Footer = () => {
               <p>Anouka Farms, Bolakil Farm Area<br />
                  Damboa Local Government, Borno State, Nigeria</p>
             </div>
-            <div className="contact-item">
+            {/* <div className="contact-item">
               <span>📧</span>
               <p></p>
             </div>
             <div className="contact-item">
               <span>📞</span>
               <p></p>
-            </div>
+            </div> */}
           </div>
         </div>
         
