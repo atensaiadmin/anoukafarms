@@ -48,11 +48,11 @@ const Footer = () => {
             </div>
             <div className="contact-item">
               <span>📧</span>
-              <p>info@anoukafarms.ng</p>
+              <p></p>
             </div>
             <div className="contact-item">
               <span>📞</span>
-              <p>+234 [Your Phone]</p>
+              <p></p>
             </div>
           </div>
         </div>
