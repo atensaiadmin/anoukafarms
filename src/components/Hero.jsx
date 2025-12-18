@@ -1,6 +1,9 @@
 import React from 'react'
 import './Hero.css'
 import farmImage from '../assets/images/farmproduce.jpeg'
+import { FaGlobeAfrica } from 'react-icons/fa'
+import { GiWheat, GiCorn, GiPeanut } from 'react-icons/gi'
+import { TbBeans } from 'react-icons/tb'
 
 const Hero = () => {
   const scrollToSection = (sectionId) => {
@@ -19,7 +22,7 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-content">
           <div className="hero-badge">
-            <span className="badge-icon">🌍</span>
+            <span className="badge-icon"><FaGlobeAfrica /></span>
             <span>Contributing to Global Food Security</span>
           </div>
           
@@ -75,19 +78,19 @@ const Hero = () => {
           <div className="visual-container">
             <div className="crop-showcase">
               <div className="crop-item">
-                <div className="crop-icon">🌾</div>
+                <div className="crop-icon"><GiWheat /></div>
                 <span>Millet</span>
               </div>
               <div className="crop-item">
-                <div className="crop-icon">🌽</div>
+                <div className="crop-icon"><GiCorn /></div>
                 <span>Maize</span>
               </div>
               <div className="crop-item">
-                <div className="crop-icon">🥜</div>
+                <div className="crop-icon"><GiPeanut /></div>
                 <span>Groundnuts</span>
               </div>
               <div className="crop-item">
-                <div className="crop-icon">🫘</div>
+                <div className="crop-icon"><TbBeans /></div>
                 <span>Cowpea</span>
               </div>
             </div>

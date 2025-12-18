@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Header.css'
+import { GiWheat } from 'react-icons/gi'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,7 +26,7 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'header-scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">
-          <div className="logo-icon">🌾</div>
+          <div className="logo-icon"><GiWheat /></div>
           <div className="logo-text">
             <h2>Anouka Farms</h2>
             <span className="tagline">Borno, Nigeria</span>

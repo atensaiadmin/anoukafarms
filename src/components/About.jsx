@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+import { FaSeedling, FaHandshake, FaTrophy, FaGlobeAfrica } from 'react-icons/fa'
 
 const About = () => {
   return (
@@ -22,28 +23,28 @@ const About = () => {
           </div>
           <div className="about-features">
             <div className="feature">
-              <div className="feature-icon">🌱</div>
+              <div className="feature-icon"><FaSeedling /></div>
               <div className="feature-content">
                 <h3>Sustainable Farming</h3>
                 <p>Environmentally responsible practices for long-term soil health and biodiversity preservation</p>
               </div>
             </div>
             <div className="feature">
-              <div className="feature-icon">🤝</div>
+              <div className="feature-icon"><FaHandshake /></div>
               <div className="feature-content">
                 <h3>Community Support</h3>
                 <p>Supporting local farmers and contributing to regional economic development</p>
               </div>
             </div>
             <div className="feature">
-              <div className="feature-icon">🏆</div>
+              <div className="feature-icon"><FaTrophy /></div>
               <div className="feature-content">
                 <h3>Quality Focus</h3>
                 <p>Premium crops that meet international standards and local market demands</p>
               </div>
             </div>
             <div className="feature">
-              <div className="feature-icon">🌍</div>
+              <div className="feature-icon"><FaGlobeAfrica /></div>
               <div className="feature-content">
                 <h3>Global Impact</h3>
                 <p>Contributing to food security in Nigeria and strengthening the global food basket</p>

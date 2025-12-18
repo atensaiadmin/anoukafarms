@@ -98,6 +98,12 @@
   opacity: 0.9;
 }
 
+.developer-credit .heart-icon {
+  color: #ff6b6b;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;

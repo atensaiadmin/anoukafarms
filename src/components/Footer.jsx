@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import { FaMapMarkerAlt, FaHeart } from 'react-icons/fa'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -42,16 +43,16 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <div className="contact-item">
-              <span>📍</span>
+              <span><FaMapMarkerAlt /></span>
               <p>Anouka Farms, Bolakil Farm Area<br />
                  Damboa Local Government, Borno State, Nigeria</p>
             </div>
             {/* <div className="contact-item">
-              <span>📧</span>
+              <span><FaEnvelope /></span>
               <p></p>
             </div>
             <div className="contact-item">
-              <span>📞</span>
+              <span><FaPhone /></span>
               <p></p>
             </div> */}
           </div>
@@ -62,6 +63,10 @@ const Footer = () => {
           <div className="footer-bottom-content">
             <p>&copy; {currentYear} Anouka Farms. All rights reserved.</p>
             <p>Building Nigeria's agricultural future, one harvest at a time.</p>
+            <p className="developer-credit">
+              Crafted with <FaHeart className="heart-icon" /> by <a href="https://www.jidemobell.com" target="_blank" rel="noopener noreferrer">jidemobell</a> | 
+              Built under <a href="https://www.atensai.com" target="_blank" rel="noopener noreferrer">Atensai</a>
+            </p>
           </div>
         </div>
       </div>
